@@ -80,7 +80,11 @@ console.log("************");
 and iterates through it to count how many movies were released in the year 1994.
 ********************************/
 
-function countMovies(movies) {}
+function countMovies(movies) {
+  return movies.year == 1994;
+}
+let newfilter = movies.filter(countMovies).length;
+console.log(newfilter);
 
 /******************************
 	Q6) Write a function that updates the genre of the movie "The Dark Knight"
